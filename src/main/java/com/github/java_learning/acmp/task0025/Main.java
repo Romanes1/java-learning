@@ -1,4 +1,4 @@
-package com.github.java_learning.acmp.task0001;
+package com.github.java_learning.acmp.task0025;
 
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -10,11 +10,11 @@ public class Main {
 
         int a = in.nextInt();
         int b = in.nextInt();
-        int c = a + b;
-        out.print(c);
+
+        if (a<b) out.print("<");
+        if (a==b) out.print("=");
+        if (a>b) out.print(">");
+
         out.flush();
     }
 }
-
-
-
