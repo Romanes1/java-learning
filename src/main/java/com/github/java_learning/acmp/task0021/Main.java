@@ -1,5 +1,4 @@
-package com.github.java_learning.acmp.task0033;
-
+package com.github.java_learning.acmp.task0021;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
@@ -10,11 +9,12 @@ public class Main {
 
         int a = in.nextInt();
         int b = in.nextInt();
-        int c = (-a+10);
+        int c = in.nextInt();
+
         int d = (-b+10);
 
         out.print(c);
-        out.print(" ");
+        out.print("\n");
 
         out.print(d);
 
