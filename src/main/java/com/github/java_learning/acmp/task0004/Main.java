@@ -1,4 +1,4 @@
-package com.github.java_learning.acmp.task0766;
+package com.github.java_learning.acmp.task0004;
 
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -9,16 +9,16 @@ public class Main {
         PrintWriter out = new PrintWriter(System.out);
 
         int a = in.nextInt();
-        int b = in.nextInt();
-        int c = in.nextInt();
+
+        int b = (9-a);
 
 
-        int d = a * b;
-        if (d >= c) {
-            out.print("YES");
-        } else {
-            out.print("NO");
-        }
+        out.print(a);
+        out.print(9);
+        out.print(b);
+
+
         out.flush();
     }
 }
+
