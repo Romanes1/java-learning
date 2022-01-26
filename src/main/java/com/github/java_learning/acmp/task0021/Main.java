@@ -12,13 +12,13 @@ public class Main {
         int a = in.nextInt();
         int b = in.nextInt();
         int c = in.nextInt();
-ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         list.add(a);
         list.add(b);
         list.add(c);
         int d = Collections.max(list);
         int e = Collections.min(list);
-        int f=d-e;
+        int f = d - e;
         out.print(f);
         out.flush();
     }
