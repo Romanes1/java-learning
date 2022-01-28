@@ -7,17 +7,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         PrintWriter out = new PrintWriter(System.out);
-
         int a = in.nextInt();
         int b = in.nextInt();
-        int c = (-a+10);
-        int d = (-b+10);
-
+        int c = (b - 1);
+        int d = (a - 1);
         out.print(c);
         out.print(" ");
-
         out.print(d);
-
         out.flush();
     }
 }
