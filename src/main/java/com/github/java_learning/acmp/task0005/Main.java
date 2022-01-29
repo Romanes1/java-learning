@@ -22,8 +22,16 @@ public class Main {
           else
               odd.add(x);
         }
-        out.println(odd);
-        out.println(even);
+        for (Integer integer : odd) {
+            out.print(integer);
+            out.print(" ");
+        }
+        out.print("\n");
+        for (Integer integer : even) {
+            out.print(integer);
+            out.print(" ");
+        }
+        out.print("\n");
         int four = odd.size();
         int three = even.size();
         if (four < three)
