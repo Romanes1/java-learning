@@ -16,7 +16,17 @@ public class Main {
             else d++;
         }
         int e = Math.min(c,d);
-                    out.print(e);
+                    out.print("0");
+
+        if (c==a)
+            out.print("0");
+        else
+        if (c==0)
+            out.print("0");
+        else
+        if (2d<a)
+            out.print(d);
+                    else out.print(c);
         out.flush();
     }
 }
