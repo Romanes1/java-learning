@@ -1,14 +1,16 @@
 package com.github.java_learning.Transactions;
 
 public class Refill extends Transaction {
-    private final int got;
 
-    public Refill(int j, String l) {
-        this.got = j;
+    private double amount;
+
+    public Refill(double amount, String comment) {
+        this.amount = amount;
     }
 
     @Override
-    public int diff() {
-        return got;
+    public double diff() {
+        return amount;
     }
+
 }

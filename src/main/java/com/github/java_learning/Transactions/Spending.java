@@ -1,18 +1,18 @@
 package com.github.java_learning.Transactions;
 
 public class Spending extends Transaction {
-    private final int spent;
 
-    public Spending(int i, String k) {
-        this.spent = -i;
+    private double amount;
+
+    public Spending(double amount, String comment) {
+        this.amount = amount;
     }
 
-        @Override
-        public int diff () {
-            return spent;
-        }
+    @Override
+    public double diff() {
+        return -amount;
     }
 
-
+}
 
 
