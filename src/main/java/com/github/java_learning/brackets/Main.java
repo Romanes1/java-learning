@@ -12,22 +12,44 @@ public class Main {
         char[] chArray = string.toCharArray();
         int a = chArray.length;
         int count = 0;
+        char previous = chArray[0];
         MyStack stack = new MyStack(a);
         for (int i = 0; i < a; i++) {
             char b = chArray[i];
             String br = "(";
+            String br1 = "[";
+            String br2 = ")";
+            String br3 = "]";
             char[] bracket = br.toCharArray();
+            char[] bracket1 = br1.toCharArray();
+            char[] bracket2 = br2.toCharArray();
+            char[] bracket3 = br3.toCharArray();
             char с = bracket[0];
-            if (b == с) {
+            char d = bracket1[0];
+            char e = bracket2[0];
+            char f = bracket3[0];
+            if (b == с || b == d) {
                 stack.push(b);
                 count++;
-            } else {
-                stack.pop();
             }
+            if (i >= 1) {
+                previous = chArray[i - 1];
+            }
+                if (b == e && previous == d) {
+                    System.out.println("false1");
+                    count--;
+                } else if (b == f && previous == с) {
+                    System.out.println("false2");
+                    count--;
+                } else if (b == e || b == f) {
+                    stack.pop();
+                    count--;
+                }
         }
-        int count2 = count * 2;
-        if (count2 == a) System.out.println("true");
-        else System.out.println("false");
+        if (count==0){
+            System.out.println("True");
+        }
+        }
     }
-}
+
 
