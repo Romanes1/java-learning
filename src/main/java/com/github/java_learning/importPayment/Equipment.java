@@ -1,26 +1,26 @@
 package com.github.java_learning.importPayment;
 
-public class equipment extends importedProduct {
+public class Equipment extends ImportedProduct {
 
     private double cost;
 
-    public equipment(double cost) {
+    public Equipment(double cost) {
         this.cost = cost;
     }
 
 
     @Override
-    public double VATTax() {
+    public double vatTax() {
         return cost / 5;
     }
 
     @Override
-    public double CustomsDuty() {
+    public double customsDuty() {
         return cost / 10;
     }
 
     @Override
-    public double CostOfFreight() {
+    public double costOfFreight() {
         return cost / 10;
 
     }
