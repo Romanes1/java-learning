@@ -24,11 +24,11 @@ public class Main {
             char[] bracket1 = br1.toCharArray();
             char[] bracket2 = br2.toCharArray();
             char[] bracket3 = br3.toCharArray();
-            char с = bracket[0];
+            char c = bracket[0];
             char d = bracket1[0];
             char e = bracket2[0];
             char f = bracket3[0];
-            if (b == с || b == d) {
+            if (b == c || b == d) {
                 stack.push(b);
                 count++;
             }
@@ -36,18 +36,18 @@ public class Main {
                 previous = chArray[i - 1];
             }
                 if (b == e && previous == d) {
-                    System.out.println("false1");
-                    count--;
-                } else if (b == f && previous == с) {
-                    System.out.println("false2");
-                    count--;
+                    System.out.println("false");
+                    return;
+                } else if (b == f && previous == c) {
+                    System.out.println("false");
+                    return;
                 } else if (b == e || b == f) {
                     stack.pop();
                     count--;
                 }
         }
         if (count==0){
-            System.out.println("True");
+            System.out.println("true");
         }
         }
     }

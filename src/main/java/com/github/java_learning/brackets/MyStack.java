@@ -27,7 +27,7 @@ public class MyStack {
      */
     public int pop() {
         if (size == 0) {
-            System.out.println("false in stack");
+            System.out.println("false");
         }
 
         int element = state[size - 1];
