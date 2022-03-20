@@ -1,4 +1,4 @@
-package com.github.java_learning.Transactions;
+package com.github.java_learning.transactions;
 
 import java.util.List;
 

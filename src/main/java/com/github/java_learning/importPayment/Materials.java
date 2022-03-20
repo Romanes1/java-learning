@@ -1,6 +1,6 @@
 package com.github.java_learning.importPayment;
 
-public class Materials extends ImportedProduct {
+public class Materials extends com.github.java_learning.importPayment.ImportedProduct {
     private final double cost;
 
     public Materials(double cost) {
