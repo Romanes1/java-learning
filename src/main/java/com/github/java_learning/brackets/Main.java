@@ -16,18 +16,10 @@ public class Main {
         MyStack stack = new MyStack(a);
         for (int i = 0; i < a; i++) {
             char b = chArray[i];
-            String br = "(";
-            String br1 = "[";
-            String br2 = ")";
-            String br3 = "]";
-            char[] bracket = br.toCharArray();
-            char[] bracket1 = br1.toCharArray();
-            char[] bracket2 = br2.toCharArray();
-            char[] bracket3 = br3.toCharArray();
-            char c = bracket[0];
-            char d = bracket1[0];
-            char e = bracket2[0];
-            char f = bracket3[0];
+            char c = '(';
+            char d = '[';
+            char e = ')';
+            char f = ']';
             if (b == c || b == d) {
                 stack.push(b);
                 count++;
