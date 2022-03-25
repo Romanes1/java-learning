@@ -1,5 +1,4 @@
 package com.github.java_learning.acmp.task0970;
-
 import java.io.PrintWriter;
 import java.util.Scanner;
 
@@ -13,12 +12,15 @@ public class Main {
         int c = in.nextInt();
 
 
-        if (a+b==c || b+c==a || a+c==b ) {
-            out.print("YES");
+        String yn = aPlusBequalsC(a, b, c);
+        out.print(yn);
+    }
+
+    static String aPlusBequalsC(int a, int b, int c) {
+        if (a + b == c || b + c == a || a + c == b) {
+            return "YES";
         } else
-            out.print("NO");
-        out.flush();
+            return "NO";
+
     }
 }
-
-
