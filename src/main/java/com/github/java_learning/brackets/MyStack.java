@@ -3,7 +3,7 @@ package com.github.java_learning.brackets;
 public class MyStack {
 
     private char[] state;
-    public static int size = 0;
+    private static int size = 0;
 
     public MyStack(int maxSize) {
         state = new char[maxSize];
@@ -28,11 +28,16 @@ public class MyStack {
     public int pop() {
         if (size == 0) {
             System.out.println("false");
+
         }
 
         int element = state[size - 1];
         size = size - 1;
         return element;
+
     }
 
+    public static int getSize() {
+        return size;
+    }
 }
