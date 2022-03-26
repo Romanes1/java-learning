@@ -27,21 +27,22 @@ public class Main {
             if (i >= 1) {
                 previous = chArray[i - 1];
             }
-                if (b == e && previous == d) {
-                    System.out.println("false");
-                    return;
-                } else if (b == f && previous == c) {
-                    System.out.println("false");
-                    return;
-                } else if (b == e || b == f) {
-                    stack.pop();
-                    count--;
-                }
+            if (b == e && previous == d) {
+                System.out.println("false");
+                return;
+            } else if (b == f && previous == c) {
+                System.out.println("false");
+                return;
+            } else if (b == e || b == f) {
+                stack.pop();
+                count--;
+            }
         }
         if (count==0){
             System.out.println("true");
         }
-        }
+        else System.out.println("false");
     }
+}
 
 
