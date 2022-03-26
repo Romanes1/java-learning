@@ -11,7 +11,6 @@ public class Main {
         String string = reader.readLine();
         char[] chArray = string.toCharArray();
         int a = chArray.length;
-        int count = 0;
         char previous = chArray[0];
         MyStack stack = new MyStack(a);
         for (int i = 0; i < a; i++) {
@@ -22,7 +21,6 @@ public class Main {
             char f = ']';
             if (b == c || b == d) {
                 stack.push(b);
-                count++;
             }
             if (i >= 1) {
                 previous = chArray[i - 1];
@@ -35,10 +33,9 @@ public class Main {
                 return;
             } else if (b == e || b == f) {
                 stack.pop();
-                count--;
             }
         }
-        if (count==0){
+        if (MyStack.size==0){
             System.out.println("true");
         }
         else System.out.println("false");
