@@ -35,7 +35,7 @@ public class Main {
                 stack.pop();
             }
         }
-        if (0 == MyStack.getSize()){
+        if (0 == stack.getSize()){
             System.out.println("true");
         }
         else System.out.println("false");

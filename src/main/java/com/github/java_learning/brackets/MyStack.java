@@ -37,7 +37,7 @@ public class MyStack {
 
     }
 
-    public static int getSize() {
+    public int getSize() {
         return size;
     }
 }
