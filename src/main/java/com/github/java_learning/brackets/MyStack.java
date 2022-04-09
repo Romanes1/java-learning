@@ -1,5 +1,7 @@
 package com.github.java_learning.brackets;
 
+import java.util.Arrays;
+
 public class MyStack {
 
     private char[] state;
@@ -39,5 +41,27 @@ public class MyStack {
 
     public int getSize() {
         return size;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        MyStack myStack = (MyStack) o;
+
+        return Arrays.equals(state, myStack.state);
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(state);
+    }
+
+    @Override
+    public String toString() {
+        return "MyStack{" +
+                "What chars are inside the stack" + Arrays.toString(state) +
+                '}';
     }
 }
